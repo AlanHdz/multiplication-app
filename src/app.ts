@@ -7,7 +7,7 @@ import { ServerApp } from "./presentation/server-app";
 
 async function main() {
 
-  const { b:base, l:limit, s:showTable } = await yarg;
+  const { b:base, l:limit, s:showTable, d:fileDestination, n:fileName } = await yarg;
 
-  ServerApp.run({ base, limit, showTable })
+  ServerApp.run({ base, limit, showTable, fileDestination, fileName })
 }
